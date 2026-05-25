@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: #1a1a1a;
+  font-family: system-ui, sans-serif;
+}
+
+.poster-wrap {
+  position: relative;
+}
+
+.poster-wrap svg {
+  display: block;
+  height: min(92vh, 820px);
+  width: auto;
+}
+
+.hint {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+#world {
+  cursor: grab;
+}
+
+#world.is-grabbed {
+  cursor: grabbing;
+}
